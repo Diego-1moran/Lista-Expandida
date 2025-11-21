@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    /* 🔥 Fondo de pantalla */
+    background: url('imagenes/fondo.jpg');
+    background-size: cover;        
+    background-position: center;   
+    background-attachment: fixed;  
+}
+
+/* CONTENEDOR PRINCIPAL */
+.lista {
+    width: 600px;
+    margin: 40px auto;
+    background: rgba(233, 227, 227, 0.05);
+    padding: 30px 40px;
+    border-radius: 25px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 25px #0befff55;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.lista h2{
+    color: #00ff59;
+    margin-bottom: 18px;
+    font-size: 1.4em;
+    text-shadow: 0 0 10px #bd0ae0;
+}
+
+/* LISTA */
+.lista li {
+    list-style: none;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgba(255,255,255,0.03);  
+    border-radius: 6px;
+    border-left: 4px solid #cb78d8;
+    cursor: pointer;
+    transition: 0.3s ease; 
+    backdrop-filter: blur(2px); 
+}
+
+/* HOVER VERDE + DESPLAZAMIENTO */
+.lista li:hover {
+    background: rgba(178, 61, 214, 0.952); 
+    border-left: 4px solid #ebe7ec;
+    transform: translateX(8px); 
+    box-shadow: 0 0 12px rgba(195, 0, 255, 0.35); 
+}
+
+/* TEXTO EN VERDE */
+.lista li:hover span {
+    color: #00ff59;
+}
+
+
+/* TEXTO EN VERDE */
+.lista li:hover span {
+    color: #00ff59;
+}
+
+
+/* TÍTULO DEL ITEM */
+.lista li span {
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    font-size: 18px;
+    color: #dee9df;      
+}
+
+/* CONTENIDO INTERNO (ANTES NEGRO → AHORA CLARO) */
+.contenido {
+    display: none;
+    color: #e9e1e1;  
+}
+
+/* OCULTAR EL CONTENIDO AL CARGAR LA PÁGINA */
+.contenido {
+    display: none;
+}
+
+.contenido video {
+    width: 100%;
+    max-width: 400px;
+    margin: 15px auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #c308e9;
+}
+
+
+/* IMÁGENES */
+.contenido img{
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    margin: 12px auto;
+    display: block;
+    box-shadow: 0 0 10px #f107d2;
+    transition: transform .3s ease;
+}
+
+
+/* EFECTO ZOOM */
+.contenido img:hover {
+    transform: scale(1.1);
+}
